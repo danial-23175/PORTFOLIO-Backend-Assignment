@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Danial Shakeel</h1>
+            <p>Address: Johar Town, Lahore</p>
+            <p>Phone: 03007750754</p>
+            <p>Email: bscs23175@gmail.com</p>
+        </div>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2>Education</h2>
+            <ul id="educationList"></ul>
+            <button id="addEducationBtn">Add Education</button>
+            <button id="showEducationDataBtn">Show Data</button>
+            <div id="educationFormContainer" class="form-container" style="display: none;">
+                <form id="educationForm">
+                    <input type="text" id="school" placeholder="School Name" required>
+                    <input type="text" id="degree" placeholder="Degree" required>
+                    <input type="number" id="year" placeholder="Year of Graduation" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2>Experience</h2>
+            <ul id="experienceList"></ul>
+            <button id="addExperienceBtn">Add Experience</button>
+            <button id="showExperienceDataBtn">Show Data</button>
+            <div id="experienceFormContainer" class="form-container" style="display: none;">
+                <form id="experienceForm">
+                    <input type="text" id="company" placeholder="Company Name" required>
+                    <input type="text" id="role" placeholder="Role" required>
+                    <input type="text" id="duration" placeholder="Duration" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Skills</h2>
+            <ul id="skillList"></ul>
+            <button id="addSkillBtn">Add Skill</button>
+            <button id="showSkillDataBtn">Show Data</button>
+            <div id="skillFormContainer" class="form-container" style="display: none;">
+                <form id="skillForm">
+                    <input type="text" id="name" placeholder="Skill Name" required>
+                    <input type="text" id="level" placeholder="Skill Level" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2>Projects</h2>
+            <ul id="projectList"></ul>
+            <button id="addProjectBtn">Add Project</button>
+            <button id="showProjectDataBtn">Show Data</button>
+            <div id="projectFormContainer" class="form-container" style="display: none;">
+                <form id="projectForm">
+                    <input type="text" id="projectName" placeholder="Project Name" required>
+                    <input type="text" id="projectDescription" placeholder="Project Description" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Popup for Success Message -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopupBtn">&times;</span>
+            <p id="successMessage">Data submitted successfully!</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+<div class="theme-toggle-container">
+    <button id="themeToggle" class="theme-toggle-btn">🌙</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
