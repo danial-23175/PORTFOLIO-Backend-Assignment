@@ -1,7 +1,7 @@
 const express = require('express');
-const connectDB = require('./config/db');  // Import the connectDB function
+const connectDB = require('./config/db'); 
 const dotenv = require('dotenv');
-const morgan = require('morgan');  // Logging middleware
+const morgan = require('morgan'); 
 
 // Load environment variables from .env
 dotenv.config();
@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 // Connect to MongoDB
-connectDB();  // Establish connection to MongoDB using the MONGO_URI from .env
+connectDB();  
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
